@@ -1,8 +1,8 @@
-html {
+/* html {
     box-sizing: border-box;
   }
 
-  button {
+  input {
     border: 0;
     background-color: transparent;
     font-size: inherit;
@@ -19,14 +19,7 @@ html {
     line-height: 1.0;
   }
   
-  body {
-    align-items: center;
-  
-    background-color: #e97f06;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-  }
+ 
   
   .calculator {
     border-radius: 20px;
@@ -52,31 +45,9 @@ html {
     grid-template-columns: repeat(4, 1fr);
   }
   
-  .keys > * {
-    background-color: #fff;
-    padding: 0.5em 1.25em;
-    position: relative;
-    text-align: center;
-  }
-  
-  .keys > *:active::before,
-  .keys > .is-depressed::before {
-    background-color: rgba(0, 0, 0, 0.2);
-    bottom: 0;
 
-    content: "";
-    left: 0;
-    opacity: 0.3;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1;
-  }
   
-  .key-op {
-    background-color: #eee;
-  }
-  
+ 
   .key-equals {
     background-image: linear-gradient(to bottom, #968d8b, #a9a6a5);
     grid-column: -2;
@@ -88,3 +59,24 @@ html {
   }
   
   
+
+  body {
+    align-items: center;
+  
+    background-color: #e97f06;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+  }
+
+  .key-op {
+    background-color: #eee;
+  } */
+
+
+
+/* code for person 1 goes here */
+
+
+
+/* code for person 2 goes here */
