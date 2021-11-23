@@ -83,7 +83,7 @@
         <input type="button" class="key-op" value="/" onclick="calc_form.display.value += '/' ">
         <input type="button" value="0" onclick="calc_form.display.value += '0'; digit_pressed()">
         <input type="button" value="." onclick="calc_form.display.value += '.' ">
-        <input type="button" value="=" onclick="calc_form.display.value = eval(calc_form.display.value) ">
+        <input type="button" value="=" onclick="calc_form.display.value = calculate_entries(calc_form.display.value) ">
 
         <br>
         <input type="button" class="key-clear" value="AC" onclick="clear_all()" id="clear">
