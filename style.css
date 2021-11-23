@@ -125,7 +125,7 @@ h1 {
 }
 
 .calc_form_style{
-  width: 300px;
+  width: 290px;
   height: 550px;
   margin: auto;
   border: 3px solid black;
@@ -147,7 +147,7 @@ input{
 }
 
 #calc{
-  width: 290px;
+  width: 235px;
   border: 5px solid black;
     border-radius: 3px;
     padding: 20px;
