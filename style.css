@@ -6,26 +6,6 @@ body {
   z-index: 0;
 }
 
-.keys>* {
-  background-color: #fff;
-  padding: 0.5em 1.25em;
-  position: relative;
-  text-align: center;
-}
-
-.keys>*:active::before,
-.keys>.is-depressed::before {
-  background-color: rgba(0, 0, 0, 0.2);
-  bottom: 0;
-
-  content: "";
-  left: 0;
-  opacity: 0.3;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
 h1 {
   text-align: center;
   padding: 23px;
@@ -33,7 +13,7 @@ h1 {
   color: white;
 }
 
-#clear {
+#cl {
   width: 275px;
   border: 3px solid gray;
   border-radius: 20px;
@@ -54,7 +34,6 @@ h1 {
 input {
   width: 20px;
   background-color: rgba(0, 0, 0, 0.2);
-
   color: white;
   border: 3px solid black;
   border-radius: 15px;
