@@ -1,130 +1,47 @@
-/* html {
-    box-sizing: border-box;
-  }
-
-  input {
-    border: 0;
-    background-color: transparent;
-    font-size: inherit;
-    font-family: inherit;
-    font-weight: inherit;
-    outline: none;
-    appearance: none;
-    text-align: left;
-  }
-  
-  html {
-    font-size: 200%;
-    font-weight: 300;
-    line-height: 1.0;
-  }
-  
- 
-  
-  .calculator {
-    border-radius: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2em;
-    max-width: 15em;
-    
-  }
-  
-  .display {
-    background-color: #222222;
-    color: #fff;
-    font-size: 1.714285714em;
-    padding: 0.5em 0.75em;
-    text-align: right;
-  }
-  
-  .keys {
-    background-color: #999;
-    display: grid;
-    grid-gap: 1px;
-    grid-template-columns: repeat(4, 1fr);
-  }
-  
-
-  
- 
-  .key-equals {
-    background-image: linear-gradient(to bottom, #968d8b, #a9a6a5);
-    grid-column: -2;
-    grid-row: 2 / span 3;
-  }
-
-  .key-clear {
-    background-image: linear-gradient(to bottom, #f07256, #f26c3f);
-  }
-  
-  
-
-  body {
-    align-items: center;
-  
-    background-color: #e97f06;
-    display: flex;
-    height: 100vh;
-    justify-content: center;
-  }
-
-  .key-op {
-    background-color: #eee;
-  } */
-
-
-
 body {
-    align-items: center;
-  
-    background-color: #e97f06;
-    /* display: flex; */
-    height: 100vh;
-    justify-content: center;
-    z-index: 0;
-  }
-
-  .keys > * {
-    background-color: #fff;
-    padding: 0.5em 1.25em;
-    position: relative;
-    text-align: center;
-  }
-  
-  .keys > *:active::before,
-  .keys > .is-depressed::before {
-    background-color: rgba(0, 0, 0, 0.2);
-    bottom: 0;
-
-    content: "";
-    left: 0;
-    opacity: 0.3;
-    position: absolute;
-    right: 0;
-    top: 0;
-    /* z-index: 1; */
-  }
-
-h1 {  
-    text-align: center;  
-    padding: 23px;  
-    background-color: lightgrey;  
-    color: white;  
-    }  
-
-
-
-/* code for person 2 goes here */
-#clear{
-  width: 275px;
-  border: 3px solid gray;
-    border-radius: 20px;
-    padding: 20px;
-    background-color: gray;
+  align-items: center;
+  background-color: #e97f06;
+  height: 100vh;
+  justify-content: center;
+  z-index: 0;
 }
 
-.calc_form_style{
+.keys>* {
+  background-color: #fff;
+  padding: 0.5em 1.25em;
+  position: relative;
+  text-align: center;
+}
+
+.keys>*:active::before,
+.keys>.is-depressed::before {
+  background-color: rgba(0, 0, 0, 0.2);
+  bottom: 0;
+
+  content: "";
+  left: 0;
+  opacity: 0.3;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+h1 {
+  text-align: center;
+  padding: 23px;
+  background-color: lightgrey;
+  color: white;
+}
+
+#clear {
+  width: 275px;
+  border: 3px solid gray;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: gray;
+}
+
+.calc_form_style {
   width: 290px;
   height: 550px;
   margin: auto;
@@ -134,24 +51,23 @@ h1 {
   z-index: 1;
 }
 
-input{
+input {
   width: 20px;
   background-color: rgba(0, 0, 0, 0.2);
 
   color: white;
   border: 3px solid black;
-    border-radius: 15px;
-    padding: 26px;
-    margin: 5px;
-    font-size: 15px;
+  border-radius: 15px;
+  padding: 26px;
+  margin: 5px;
+  font-size: 15px;
 }
 
-#calc{
+#calc {
   width: 235px;
   border: 5px solid black;
-    border-radius: 20px;
-    padding: 20px;
-    margin: auto;
-    font-size: 25px;
-
+  border-radius: 20px;
+  padding: 20px;
+  margin: auto;
+  font-size: 25px;
 }

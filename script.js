@@ -1,29 +1,27 @@
 
 digits_pressed = 0;
 
-
 function calculate_entries(string_to_caluclate) {
 
-	for (let i = string_to_caluclate.length-1; i > -1; i--) {
-      if (string_to_caluclate[i] == "+"){
-		  return calculate_entries(string_to_caluclate.substring(0,i)) + calculate_entries(string_to_caluclate.substring(i+1,string_to_caluclate.length));
-      }
-	  if (string_to_caluclate[i] == "-"){
-		  return calculate_entries(string_to_caluclate.substring(0,i)) - calculate_entries(string_to_caluclate.substring(i+1,string_to_caluclate.length));
-      }
+    for (let i = string_to_caluclate.length - 1; i > -1; i--) {
+        if (string_to_caluclate[i] == "+") {
+            return calculate_entries(string_to_caluclate.substring(0, i)) + calculate_entries(string_to_caluclate.substring(i + 1, string_to_caluclate.length));
+        }
+        if (string_to_caluclate[i] == "-") {
+            return calculate_entries(string_to_caluclate.substring(0, i)) - calculate_entries(string_to_caluclate.substring(i + 1, string_to_caluclate.length));
+        }
     }
 
-    for (let i = string_to_caluclate.length-1; i > -1; i--) {
-      if (string_to_caluclate[i] == "*"){
-		  return calculate_entries(string_to_caluclate.substring(0,i)) * calculate_entries(string_to_caluclate.substring(i+1,string_to_caluclate.length));
-      }
-	  if (string_to_caluclate[i] == "/"){
-		  return calculate_entries(string_to_caluclate.substring(0,i)) / calculate_entries(string_to_caluclate.substring(i+1,string_to_caluclate.length));
-      }
+    for (let i = string_to_caluclate.length - 1; i > -1; i--) {
+        if (string_to_caluclate[i] == "*") {
+            return calculate_entries(string_to_caluclate.substring(0, i)) * calculate_entries(string_to_caluclate.substring(i + 1, string_to_caluclate.length));
+        }
+        if (string_to_caluclate[i] == "/") {
+            return calculate_entries(string_to_caluclate.substring(0, i)) / calculate_entries(string_to_caluclate.substring(i + 1, string_to_caluclate.length));
+        }
     }
-	
-	
-	return parseFloat(string_to_caluclate);
+
+    return parseFloat(string_to_caluclate);
 
 }
 
